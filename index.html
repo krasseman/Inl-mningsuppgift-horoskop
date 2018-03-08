@@ -5,23 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Bowlby+One+SC" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css">
     <title>Document</title>
 </head>
 <body>
-       <span>Födelsenummer:</span>
+  <div id="header"><h1>  Ta reda på ditt horoskop! </h1></div>
+    <div id ="wrapper"> 
+        <div id ="formDiv"> 
+      
+            <span id="title">Födelsenummer:</span>
         <input type= "number" name="birthDate" id="birthDate"> <br>
         <button name="saveHoroscope"   onclick="saveHoroscope()" id ="saveButton">Spara Horoskop</button>
         <button name="updateHoroscope" onclick="updateHoroscope()" id= "updateButton">Uppdatera horoskop</button>
         <button name="deleteHoroscope" onclick="deleteHoroscope()" id ="updateButton">Radera Horoskop</button>
+        </div>
 
-    <div id="getMyHoroscope">
+        <div id="getMyHoroscope">
+                
+         </div>
 
-    </div>
+        
+        <div id="trueOrFalse">
 
-    <div id="trueOrFalse">
+            <h3>Console Log:</h3>
 
-    </div>
+        </div>
+
+      
+
+</div>
 
     <script src="script.js"></script>
 </body>

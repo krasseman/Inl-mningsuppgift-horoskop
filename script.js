@@ -8,9 +8,11 @@ $(document).ready(function(){
            
         })
         .done(function(data){
-                
-        
+          
             $('#getMyHoroscope').html(data);
+            $('#getMyHoroscope').hide();
+            $('#getMyHoroscope').fadeIn(3000);
+            
             
         })
 
@@ -28,7 +30,7 @@ $(document).ready(function(){
               }
         })
         .done(function(data){
-            $('#trueOrFalse').append(data);
+            $('#trueOrFalse').append(data + "</br>");
         })
         }
             printHoroscope();
@@ -46,10 +48,10 @@ $(document).ready(function(){
                   }
             })
             .done(function(data){
-                $('#trueOrFalse').append(data);
+                $('#trueOrFalse').append(data + "</br>");
             })
         }else{
-            $('#trueOrFalse').append("Du har inte skrivit in personNR");
+            $('#trueOrFalse').append("Du har inte skrivit in personNR" + "</br>");
         }
             printHoroscope();
         }
@@ -67,7 +69,7 @@ $(document).ready(function(){
                       }
                 })
                 .done(function(data){
-                    $('#trueOrFalse').append(data);
+                    $('#trueOrFalse').append(data + "</br>");
                 })
                 printHoroscope();
                 }

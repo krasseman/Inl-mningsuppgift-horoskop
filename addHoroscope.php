@@ -33,7 +33,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
             $horoscope = 'Kräfta';
         }
         if($month == $horoscopes["leoFM"] && $day >= $horoscopes["leoFD"] || $month == $horoscopes["leoLM"] && $day <= $horoscopes["leoLD"]){          
-            $horoscope = 'Lejon';
+            $horoscope = "<h1>Du är ett lejon!</h1><img src='./img/lion1.jpg'>";
         }
         if($month == $horoscopes["virgoFM"] && $day >= $horoscopes["virgoFD"] || $month == $horoscopes["virgoLM"] && $day <= $horoscopes["virgoLD"]){          
             $horoscope = 'Jungfru';
