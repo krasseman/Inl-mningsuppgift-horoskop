@@ -21,41 +21,41 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
         );
       
         if($month == $horoscopes["ariesFM"] && $day >= $horoscopes["ariesFD"] || $month == $horoscopes["ariesLM"] && $day <= $horoscopes["ariesLD"]){          
-            $horoscope = 'Vädur';
+            $horoscope = "<h1>Du är en Vädur!</h1><img src='./img/aries.jpg'>";
         }
         if($month == $horoscopes["taurusFM"] && $day >= $horoscopes["taurusFD"] || $month == $horoscopes["taurusLM"] && $day <= $horoscopes["taurusLD"]){          
-            $horoscope = 'Oxe';
+            $horoscope = "<h1>Du är en Oxe!</h1><img src='./img/taurus.jpg'>";
         }
         if($month == $horoscopes["geminiFM"] && $day >= $horoscopes["geminiFD"] || $month == $horoscopes["geminiLM"] && $day <= $horoscopes["geminiLD"]){          
-            $horoscope = 'Tvilling';
+            $horoscope = "<h1>Du är en Tvilling!</h1><img src='./img/gemelli.jpg'>";
         }
         if($month == $horoscopes["cancerFM"] && $day >= $horoscopes["cancerFD"] || $month == $horoscopes["cancerLM"] && $day <= $horoscopes["cancerLD"]){          
-            $horoscope = 'Kräfta';
+            $horoscope = "<h1>Du är en Kräfta!</h1><img src='./img/krefta1.jpg'>";
         }
         if($month == $horoscopes["leoFM"] && $day >= $horoscopes["leoFD"] || $month == $horoscopes["leoLM"] && $day <= $horoscopes["leoLD"]){          
             $horoscope = "<h1>Du är ett lejon!</h1><img src='./img/lion1.jpg'>";
         }
         if($month == $horoscopes["virgoFM"] && $day >= $horoscopes["virgoFD"] || $month == $horoscopes["virgoLM"] && $day <= $horoscopes["virgoLD"]){          
-            $horoscope = 'Jungfru';
+            $horoscope = "<h1>Du är en Jungfru!</h1><img src='./img/virgo.jpg'>";
         }
         if($month == $horoscopes["libraFM"] && $day >= $horoscopes["libraFD"] || $month == $horoscopes["libraLM"] && $day <= $horoscopes["libraLD"]){          
-            $horoscope = 'Våg';
+            $horoscope = "<h1>Du är en Våg!</h1><img src='./img/libra.jpg'>";
         }
         if($month == $horoscopes["scorpioFM"] && $day >= $horoscopes["scorpioFD"] || $month == $horoscopes["scorpioLM"] && $day <= $horoscopes["scorpioLD"]){          
-            $horoscope = 'Skorpion';
+            $horoscope = "<h1>Du är en Skorpion!</h1><img src='./img/skorpion.jpg'>";
         }
         if($month == $horoscopes["sagittariusFM"] && $day >= $horoscopes["sagittariusFD"] || $month == $horoscopes["sagittariusLM"] && $day <= $horoscopes["sagittariusLD"]){          
-            $horoscope = 'Skytt';
+            $horoscope = "<h1>Du är en Skytt!</h1><img src='./img/skytt.png'>";
         }
         if($month == $horoscopes["capricornFM"] && $day >= $horoscopes["capricornFD"] || $month == $horoscopes["capricornLM"] && $day <= $horoscopes["capricornLD"]){          
-            $horoscope = 'Stenbock';
+            $horoscope = "<h1>Du är en Stenbock!</h1><img src='./img/capricorn.jpg'>";
         }
         if($month == $horoscopes["aquariusFM"] && $day >= $horoscopes["aquariusFD"] || $month == $horoscopes["aquariusLM"] && $day <= $horoscopes["aquariusLD"]){          
-            $horoscope = 'Vattuman';
+            $horoscope = "<h1>Du är en Vattuman!</h1><img src='./img/vattuman.png'>";
         }
         if($month == $horoscopes["piscesFM"] && $day >= $horoscopes["piscesFD"] || $month == $horoscopes["piscesLM"] && $day <= $horoscopes["piscesLD"]){          
-            $horoscope = 'Fisk';
-        }
+            $horoscope = "<h1>Du är en Fisk!</h1><img src='./img/pisces.jpg'>";
+        }   
      
       
         if(!isset($_SESSION['horoscope'])){ 

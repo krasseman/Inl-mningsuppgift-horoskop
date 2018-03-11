@@ -89,3 +89,30 @@ body {
    
 }
 
+@media screen and (max-width: 600px) {
+
+   #getMyHoroscope {
+
+    order: -1;
+
+   }
+
+   #formDiv button {
+       margin: 10px;
+       width: 240px;
+   }
+  
+   input {
+       width: 100px;
+       border: 1px solid black;
+   }
+
+   #formDiv {
+       padding: 1px;
+   }
+   #trueOrFalse {
+       
+       width: 60vw;
+   }
+
+}
