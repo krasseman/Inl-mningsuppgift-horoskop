@@ -5,10 +5,10 @@
    
        if(isset($_SESSION['horoscope'])){ 
         unset($_SESSION['horoscope']);
-        echo "Delete Horoscope = True";
+        echo true;
     }
     else{
-        echo "Delete Horoscope = False";
+        echo false;
     }
    }
-   ?>
+   ?>   

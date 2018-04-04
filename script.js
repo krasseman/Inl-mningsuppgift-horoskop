@@ -11,7 +11,7 @@ $(document).ready(function(){
           
             $('#getMyHoroscope').html(data);
             $('#getMyHoroscope').hide();
-            $('#getMyHoroscope').fadeIn(3000);
+            $('#getMyHoroscope').fadeIn();
             
             
         })
@@ -30,10 +30,11 @@ $(document).ready(function(){
               }
         })
         .done(function(data){
-            $('#trueOrFalse').append(data + "</br>");
+            $('#trueOrFalse').append(data + "</br>")
+            printHoroscope();
         })
         }
-            printHoroscope();
+         
         }
 
       
@@ -48,12 +49,13 @@ $(document).ready(function(){
                   }
             })
             .done(function(data){
-                $('#trueOrFalse').append(data + "</br>");
+                $('#trueOrFalse').append(data + "</br>")
+                printHoroscope();
             })
         }else{
             $('#trueOrFalse').append("Du har inte skrivit in personNR" + "</br>");
         }
-            printHoroscope();
+                
         }
             
             
