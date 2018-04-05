@@ -30,7 +30,7 @@ $(document).ready(function(){
               }
         })
         .done(function(data){
-            $('#trueOrFalse').append(data + "</br>")
+            
             printHoroscope();
         })
         }
@@ -49,7 +49,6 @@ $(document).ready(function(){
                   }
             })
             .done(function(data){
-                $('#trueOrFalse').append(data + "</br>")
                 printHoroscope();
             })
         }else{
@@ -71,9 +70,9 @@ $(document).ready(function(){
                       }
                 })
                 .done(function(data){
-                    $('#trueOrFalse').append(data + "</br>");
+                    printHoroscope();
                 })
-                printHoroscope();
+        
                 }
 
 
